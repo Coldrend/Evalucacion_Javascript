@@ -1,0 +1,28 @@
+/* Global */
+
+header{
+    background-color: red;
+    padding: 0px 0;
+}
+
+header #titulo{
+    overflow: hidden;
+}
+
+header h1{
+    text-align: center;
+}
+
+
+.contenedor{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: blue;
+}
+
+
+footer{
+
+}
