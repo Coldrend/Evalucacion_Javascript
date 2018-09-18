@@ -3,6 +3,7 @@
 body {
     font-size: 1.5em;
     font-family: 'Courgette', cursive;
+    min-width: 320px;
 }
 
 /* Cabecera */
@@ -79,6 +80,39 @@ footer #info-sitio {
     text-align: center;
 }
 
+/* Botones */
+
+
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    justify-content: left;
+    background: transparent;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    width: 23%;
+    font-size: 2vw;
+    color: #fff;
+    background: #444;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fas {
+    padding-right: 10%;
+}
+
 /* Media Queries */
 
 @media (min-width:900px) {
@@ -103,4 +137,17 @@ footer #info-sitio {
         flex-direction: row;
         justify-content: center;
     }
+    /* Botones */
+    aside{}
+
+    #botones {
+        display: flex;
+        flex-direction: column;
+                
+    }
+    button {
+        width: 15%;
+        font-size: 1.4vw;
+    }
+
 }
