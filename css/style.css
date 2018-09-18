@@ -82,8 +82,6 @@ footer #info-sitio {
 
 /* Botones */
 
-
-
 #botones {
     display: flex;
     flex-direction: row;
@@ -116,7 +114,22 @@ button {
 /* Media Queries */
 
 @media (min-width:900px) {
-    /* Seccion Alumnos */
+   /* Seccion Alumnos */
+
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside {
+        margin: 2% 0;
+        width: 15%;
+        position: sticky;
+        top: 10px;
+        display: flex;
+        flex-direction: column;   
+        height: 0%;    
+    }
     .contenido {
         width: 65%;
         margin: 2% auto;
@@ -138,16 +151,12 @@ button {
         justify-content: center;
     }
     /* Botones */
-    aside{}
-
     #botones {
         display: flex;
         flex-direction: column;
-                
     }
     button {
-        width: 15%;
+        width: 100%;
         font-size: 1.4vw;
     }
-
 }
