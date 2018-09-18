@@ -3,7 +3,6 @@
 body {
     font-size: 1.5em;
     font-family: 'Courgette', cursive;
-    min-width: 320px;
 }
 
 /* Cabecera */
@@ -39,6 +38,7 @@ header h1 {
 .alumno-info {
     text-align: center;
     flex-basis: 70%;
+    font-size: 5vw;
 }
 
 .alumnos {
@@ -48,6 +48,14 @@ header h1 {
     background-color: white;
     display: flex;
     flex-direction: row;
+}
+
+.alumno-info h3>span {
+    color: #FFC437;
+}
+
+.alumno-info h4>span {
+    color: #008000;
 }
 
 .alumnos img {
@@ -121,7 +129,7 @@ button {
     padding-right: 10%;
 }
 
-button:hover{
+button:hover {
     background-color: #303030;
 }
 
@@ -154,6 +162,9 @@ button:hover{
         display: flex;
         flex-direction: column;
     }
+    .alumno-info {
+        font-size: 3vw;
+    }
     /* Pie de Pagina */
     footer #info-sitio {
         display: flex;
@@ -166,7 +177,6 @@ button:hover{
         flex-direction: row;
         justify-content: center;
     }
-
     /* Botones */
     #botones {
         display: flex;
