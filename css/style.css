@@ -9,11 +9,11 @@ body {
 
 header {
     background-color: red;
-    padding: 0px 0;
 }
 
 header #titulo {
     overflow: hidden;
+    padding: 0px 0;
 }
 
 header h1 {
@@ -22,7 +22,7 @@ header h1 {
 
 /* Seccion Alumnos */
 
-.contenedor {
+.contenido {
     margin: auto;
     background-color: blue;
     display: flex;
@@ -54,18 +54,53 @@ header h1 {
 
 /* Pie de Pagina */
 
-footer {}
+footer {
+    background-color: wheat;
+}
+
+footer>div {
+    width: 90%;
+}
+
+#redes-sociales li {
+    list-style: none;
+}
+
+#redes-sociales ul {
+    text-align-last: center;
+    padding: 0;
+    margin-bottom: 0%;
+}
+
+footer #info-sitio {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
 
 /* Media Queries */
 
 @media (min-width:900px) {
     /* Seccion Alumnos */
-    .contenedor {
+    .contenido {
         width: 65%;
         margin: 2% auto;
         padding: 1%;
         background-color: black;
         display: flex;
         flex-direction: column;
+    }
+    /* Pie de Pagina */
+    footer #info-sitio {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+    }
+    #redes-sociales ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
