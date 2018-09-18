@@ -9,7 +9,7 @@ body {
 /* Cabecera */
 
 header {
-    background-color: red;
+    background: url(../img/escuela/escuela-01.jpg);
 }
 
 header #titulo {
@@ -19,13 +19,14 @@ header #titulo {
 
 header h1 {
     text-align: center;
+    color: #ffffff;
 }
 
 /* Seccion Alumnos */
 
 .contenido {
     margin: auto;
-    background-color: blue;
+    background-color: #444444;
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -56,11 +57,20 @@ header h1 {
 /* Pie de Pagina */
 
 footer {
-    background-color: wheat;
+    background: url(../img/escuela/escuela-01.jpg);
+    color: #ffffff;
+}
+
+footer a {
+    color: inherit;
 }
 
 footer>div {
     width: 90%;
+}
+
+#info-sitio div {
+    padding: 0 2%;
 }
 
 #redes-sociales li {
@@ -95,7 +105,7 @@ button {
     border-radius: 2px;
     border: none;
     outline: none;
-    width: 23%;
+    width: 25%;
     font-size: 2vw;
     color: #fff;
     background: #444;
@@ -111,30 +121,36 @@ button {
     padding-right: 10%;
 }
 
+button:hover{
+    background-color: #303030;
+}
+
 /* Media Queries */
 
 @media (min-width:900px) {
-   /* Seccion Alumnos */
-
+    /* Seccion Alumnos */
     section {
         display: flex;
         flex-direction: row;
+        background: url(../img/escuela/escuela-02.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
-
     aside {
         margin: 2% 0;
         width: 15%;
         position: sticky;
         top: 10px;
         display: flex;
-        flex-direction: column;   
-        height: 0%;    
+        flex-direction: column;
+        height: 0%;
     }
     .contenido {
         width: 65%;
-        margin: 2% auto;
+        margin: 2%;
         padding: 1%;
-        background-color: black;
+        background-color: #444444;
         display: flex;
         flex-direction: column;
     }
@@ -150,6 +166,7 @@ button {
         flex-direction: row;
         justify-content: center;
     }
+
     /* Botones */
     #botones {
         display: flex;
