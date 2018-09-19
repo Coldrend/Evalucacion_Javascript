@@ -2,50 +2,50 @@ let alumnosTodos = [
     {
         "codigo": "001",
         "nombre": "Rodrigo",
-        "nota": "19"
+        "nota": 19
     },
     {
         "codigo": "002",
         "nombre": "Miguel",
-        "nota": "11"
+        "nota": 11
     },
     {
         "codigo": "003",
         "nombre": "Paul",
-        "nota": "09"
+        "nota": 09
     },
     {
         "codigo": "004",
         "nombre": "Maria",
-        "nota": "09"
+        "nota": 09
     },
     {
         "codigo": "005",
         "nombre": "Jose",
-        "nota": "16"
+        "nota": 16
     },
     {
         "codigo": "006",
         "nombre": "Paula",
-        "nota": "15"
+        "nota": 15
     },
     {
         "codigo": "007",
         "nombre": "Josephina",
-        "nota": "06"
+        "nota": 06
     },
     {
         "codigo": "008",
         "nombre": "Mauricio",
-        "nota": "18"
+        "nota": 18
     }, {
         "codigo": "009",
         "nombre": "Daniela",
-        "nota": "07"
+        "nota": 07
     }, {
         "codigo": "010",
         "nombre": "Pepe",
-        "nota": "05"
+        "nota": 05
     }
 ];
 /* Funcion que construye la lista de alumnos a traves el Json   */ 
@@ -94,7 +94,7 @@ function promedioAlumnos() {
     let suma=0; 
     let contador=0;   
     alumnosTodos.map(function (alumno) {
-        suma += (parseInt(alumno.nota)); // se suman todas las notas en la variable suma
+        suma += alumno.nota; // se suman todas las notas en la variable suma
         contador++;                      // se suman el numero de notas
     }
     );
@@ -105,7 +105,7 @@ function promedioAlumnos() {
 function notaMayor(){
     let notas = [];     // se declara un array vacio
     alumnosTodos.map(function (alumno){
-        notas.push(parseInt(alumno.nota)); // cada objeto recorrido agrega su nota 
+        notas.push(alumno.nota); // cada objeto recorrido agrega su nota 
     })
     alert(`La mayor nota es: ${Math.max.apply(null, notas)}`) // nota mayor usando Math
 }
@@ -114,7 +114,7 @@ function notaMayor(){
 function notaMenor() {
     let notas = [];     //se declara un arreglo vacio
     alumnosTodos.map(function (alumno) {
-        notas.push(parseInt(alumno.nota));  // cada objeto recorrido agrega su nota 
+        notas.push(alumno.nota);  // cada objeto recorrido agrega su nota 
     })
     alert(`La menor nota es: ${Math.min.apply(null, notas)}`) // nota menor usando Math
 }
