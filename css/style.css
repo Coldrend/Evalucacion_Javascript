@@ -54,8 +54,12 @@ header h1 {
     color: #FFC437;
 }
 
-.alumno-info h4>span {
+.alumno-info h4>.aprobado {
     color: #008000;
+}
+
+.alumno-info h4>.desaprobado {
+    color: #FF0000;
 }
 
 .alumnos img {

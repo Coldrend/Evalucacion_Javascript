@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <script src="js/main.js"></script>
+    
     <title> Escuela - alumnos | Evaluacion </title>
 </head>
 
-<body>
+<body onload="alumnosLista()">
     <!-- Cabecera -->
     <header>
         <div id="titulo">
@@ -27,109 +27,22 @@
     <section>
         <aside>
             <div id="botones">
-                <button>
+                <button onclick="mostrarTodo()">
                     <i class="fas fa-graduation-cap"></i>
                     Todo</button>
-                <button>
+                <button onclick="promedioAlumnos()">
                     <i class="fas fa-graduation-cap"></i>
                     Promedio</button>
-                <button>
+                <button onclick="notaMayor()">
                     <i class="fas fa-graduation-cap"></i>
                     Nota Mayor</button>
-                <button>
+                <button onclick="notaMenor()">
                     <i class="fas fa-graduation-cap"></i>
                     Nota Menor</button>
             </div>
         </aside>
-        <div class="contenido">
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Rodrigo <span>001</span></h3>
-                    <h4>Nota: <span>20</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
-            <div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div><div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div><div class="alumnos">
-                <div class="marco">
-                    <img src="img/login/login-01.jpg">
-                </div>
-                <div class="alumno-info">
-                    <h3>Jose <span>002</span></h3>
-                    <h4>Nota: <span>10</span></h4>
-                </div>
-            </div>
+        <div id="prueba" class="contenido">
+           
         </div>
 
     </section>
@@ -166,6 +79,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
